@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 
 const About = () => {
@@ -5,6 +6,7 @@ const About = () => {
   return (
     <div>
       <h1 className="text-lg py-2 m-4">About page</h1>
+      <button onClick={() => console.log("Clicked")}>Hey There</button>
     </div>
   );
 };
