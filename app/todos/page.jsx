@@ -1,4 +1,10 @@
+import TodosList from "./TodosList";
+
 function Todos() {
-  return <div>Todos</div>;
+  return (
+    <div>
+      <TodosList />
+    </div>
+  );
 }
 export default Todos;
