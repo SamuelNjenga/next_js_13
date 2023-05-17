@@ -1,9 +1,7 @@
-import TodosList from "./TodosList";
-
 function Todos() {
   return (
     <div>
-      <TodosList />
+      <h1>This is where the Todos will be listed...</h1>
     </div>
   );
 }
