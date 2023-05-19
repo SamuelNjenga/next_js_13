@@ -1,10 +1,11 @@
+'use client'
 import React,{useState} from 'react'
 
 const List = () => {
     const [name,setName] = useState('sam')
     return (
         <div>
-            List
+            List {name}
         </div>
     )
 }
