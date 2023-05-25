@@ -1,6 +1,8 @@
 'use client'
 import React from "react";
 
+ 
+
 const About = () => {
   // throw new Error("failed to load data")
   return (
