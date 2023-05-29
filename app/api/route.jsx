@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 export async function GET(request) {
   const cookieStore = cookies();
@@ -8,4 +9,8 @@ export async function GET(request) {
     status: 200,
     headers: { "Set-Cookie": `token=${token}` },
   });
+}
+
+export async function GET_TWO(request) {
+  redirect("https://nextjs.org/");
 }
