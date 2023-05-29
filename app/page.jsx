@@ -1,4 +1,7 @@
+import variables from "./variables.module.scss";
+
 import Movie from "./Movie";
+
 export default async function Home() {
   const data = await fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
@@ -8,7 +11,7 @@ export default async function Home() {
   console.log(res);
   return (
     <main>
-      <h1>Hello next 13 🚀</h1>
+      <h1 style={{ color: variables.primaryColor }}>Hello next 13 🚀</h1>
       <div className="grid gap-16 grid-cols-fluid">
         {res.results.map((movie) => (
           <Movie
